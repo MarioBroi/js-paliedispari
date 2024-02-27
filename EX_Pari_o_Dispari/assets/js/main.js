@@ -23,18 +23,25 @@ const sum = Number(userNumber) + Number(npcNumberFunction());
 console.log(`la somma dei numeri é: ${sum}`);
 
 //- Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) 
-let numResult;
-if (sum % 2 == 0) {
-    numResult = "pari"
+/**
+ * Controlla se il numero é divisibile per 2, ovvero pari
+ * @returns {string}
+ */
+function numberResult() {
 
-} else {
-    numResult = "dispari"
+    if (sum % 2 == 0) {
+        return "pari"
+    } else {
+        return "dispari"
+    }
 }
-console.log(`il numero sommato é ${numResult}`);
+console.log(`il numero sommato é ${numberResult()}`);
 
 //- Dichiariamo chi ha vinto.
-if (numResult === pOd) {
-    console.log("hai vinto");
+if (numberResult() === pOd) {
+    //console.log("hai vinto");
+    alert("Hai vinto! 🥳")
 } else {
-    console.log("hai perso");
+    alert("Hai perso! 😔")
+    //console.log("hai perso");
 }
