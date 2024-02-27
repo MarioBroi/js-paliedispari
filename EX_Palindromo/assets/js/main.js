@@ -27,4 +27,4 @@ function palindromo(str) {
 
 //Definiamo la varriabile di output
 const value = palindromo(string);
-//console.log(value); 
+//console.log(value);
