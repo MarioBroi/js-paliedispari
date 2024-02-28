@@ -28,16 +28,16 @@ function sfida() {
     nResult = npcNumberFunction()
     console.log(`il computer ha il numero ${nResult}`);
 
-    //- Sommiamo i due numeri 
-    const sum = Number(userNumber) + Number(nResult);
-    console.log(`la somma dei numeri é: ${sum}`);
 
     //- Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) 
     /**
      * Controlla se il numero é divisibile per 2, ovvero pari
      * @returns {string}
-     */
+    */
     function numberResult() {
+        //- Sommiamo i due numeri 
+        const sum = Number(userNumber) + Number(nResult);
+        console.log(`la somma dei numeri é: ${sum}`);
 
         if (sum % 2 == 0) {
             return "pari"
